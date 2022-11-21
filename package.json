@@ -3,10 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start_dev": "set NEXT_APP_ENV=dev && next",
+    "start_stag": "set NEXT_APP_ENV=stag && next",
+    "start_prod": "set NEXT_APP_ENV=prod && next",
+    "start_dev_w": "set NEXT_APP_ENV=dev && next",
+    "start_stag_w": "set NEXT_APP_ENV=stag && next",
+    "start_prod_w": "set NEXT_APP_ENV=prod && next",
+    "build": "next build",
+    "build_dev": "set NEXT_APP_ENV=dev && next build",
+    "deploy": "next start -p 3000"
   },
   "dependencies": {
     "eslint": "8.28.0",
